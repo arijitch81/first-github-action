@@ -46,36 +46,36 @@ jobs:
           echo "Run for DEV/PAYROLL"
       - if: env.TEST_ENV == 'DEV' && (env.TEST_TYPE == 'ADDRESSCLEANSE'
           || env.TEST_TYPE == 'BOTH')
-        name: Run tests in Dev environment for test type PAYROLL/BOTH
+        name: Run tests in Dev environment for test type ADDRESSCLEANSE/BOTH
         run: |
           echo "Run for DEV/ADDRESSCLEANSE"
       - if: env.TEST_ENV == 'QA' && (env.TEST_TYPE == 'PAYROLL'
           || env.TEST_TYPE == 'BOTH')
-        name: Run tests in Dev environment for test type PAYROLL/BOTH
+        name: Run tests in QA environment for test type PAYROLL/BOTH
         run: |
           echo "Run for QA/PAYROLL"
       - if: env.TEST_ENV == 'QA' && (env.TEST_TYPE == 'ADDRESSCLEANSE'
           || env.TEST_TYPE == 'BOTH')
-        name: Run tests in Dev environment for test type PAYROLL/BOTH
+        name: Run tests in QA environment for test type ADDRESSCLEANSE/BOTH
         run: |
           echo "Run for QA/ADDRESSCLEANSE"
       - if: env.TEST_ENV == 'STAGE' && (env.TEST_TYPE == 'PAYROLL'
           || env.TEST_TYPE == 'BOTH')
-        name: Run tests in Dev environment for test type PAYROLL/BOTH
+        name: Run tests in STAGE environment for test type PAYROLL/BOTH
         run: |
           echo "Run for STAGE/PAYROLL"
       - if: env.TEST_ENV == 'STAGE' && (env.TEST_TYPE == 'ADDRESSCLEANSE'
           || env.TEST_TYPE == 'BOTH')
-        name: Run tests in Dev environment for test type PAYROLL/BOTH
+        name: Run tests in STAGE environment for test type ADDRESSCLEANSE/BOTH
         run: |
           echo "Run for STAGE/ADDRESSCLEANSE"
       - if: env.TEST_ENV == 'PROD' && (env.TEST_TYPE == 'PAYROLL'
           || env.TEST_TYPE == 'BOTH')
-        name: Run tests in Dev environment for test type PAYROLL/BOTH
+        name: Run tests in PROD environment for test type PAYROLL/BOTH
         run: |
           echo "Run for PROD/PAYROLL"
       - if: env.TEST_ENV == 'PROD' && (env.TEST_TYPE == 'ADDRESSCLEANSE'
           || env.TEST_TYPE == 'BOTH')
-        name: Run tests in Dev environment for test type PAYROLL/BOTH
+        name: Run tests in PROD environment for test type ADDRESSCLEANSE/BOTH
         run: |
           echo "Run for PROD/ADDRESSCLEANSE"
