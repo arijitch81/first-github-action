@@ -1,4 +1,4 @@
-name: manual-integration-tests
+name: test-action-on-branching
 on:
   workflow_dispatch:
     inputs:
@@ -19,13 +19,9 @@ on:
           - PAYROLL
           - ADDRESSCLEANSE
           - BOTH
-      commit_sha:
-        type: string
-        description: Git Checkout SHA
-        required: true
 
 jobs:
-  integration-tests:
+  branching-tests:
     env:
       TEST_ENV: ${{ github.event.inputs.environment }}
       TEST_TYPE: ${{ github.event.inputs.test_type }}
